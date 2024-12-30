@@ -7,8 +7,8 @@ function Home() {
     <div className="font-sans bg-gray-100 text-gray-800">
       {/* Header */}
       <header className="bg-indigo-600 p-5 text-white text-center">
-        <h1 className="text-4xl font-bold animate-pulse">Hello People</h1>
-        <p className="text-xl mt-2">i am Rajat jagtap</p>
+        <h1 className="text-4xl font-bold animate-pulse">Hi, I’m Rajat 👋</h1>
+        <p className="text-xl mt-2">Designer ----> Developer</p>
       </header>
 
       {/* Hero Section with GIF */}
@@ -26,24 +26,39 @@ function Home() {
       {/* Home and About Sections */}
       <div className="max-w-4xl mx-auto p-5 space-y-8">
         {/* Home Section */}
-        <section id="home">
-          <h2 className="text-3xl font-bold text-center mt-12">Home</h2>
+        <section id="home" className='h-screen flex-col item-center justify-center flex'>
+          <h2 className="text-7xl font-bold text-center mt-12 ">Home</h2>
           <p className="mt-4 text-xl text-gray-700 text-center">
             Hi, I'm Rajat, a passionate web developer with a love for crafting beautiful and functional user experiences. Let's make something awesome together.
           </p>
         </section>
 
         {/* About Section */}
-        <section id="about" className="mt-12">
-          <h2 className="text-3xl font-bold text-center">About Me</h2>
+        <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex ">
+          <h2 className="text-7xl font-bold text-center">About Me</h2>
+          <p className="mt-4 text-lg text-gray-700">
+            I specialize in building responsive and scalable web applications. With experience in modern web technologies like React, Node.js, and Tailwind CSS, I bring ideas to life with clean, maintainable code.
+          </p>
+        </section>
+         {/* About Section */}
+         <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex">
+          <h2 className="text-7xl font-bold text-center">Content</h2>
+          <p className="mt-4 text-lg text-gray-700">
+            I specialize in building responsive and scalable web applications. With experience in modern web technologies like React, Node.js, and Tailwind CSS, I bring ideas to life with clean, maintainable code.
+          </p>
+        </section>
+
+             {/* About Section */}
+             <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex">
+          <h2 className="text-7xl font-bold text-center">Project</h2>
           <p className="mt-4 text-lg text-gray-700">
             I specialize in building responsive and scalable web applications. With experience in modern web technologies like React, Node.js, and Tailwind CSS, I bring ideas to life with clean, maintainable code.
           </p>
         </section>
 
         {/* Widgets Section */}
-        <section id="skills" className="mt-12">
-          <h2 className="text-3xl font-bold text-center">My Skills</h2>
+        <section id="skills" className="mt-12 h-screen flex-col item-center justify-center flex">
+          <h2 className="text-7xl font-bold text-center">My Skills</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
             <div className="widget p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 flex items-center ">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox=
