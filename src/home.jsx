@@ -6,13 +6,24 @@ function Home() {
   return (
     <div className="font-sans bg-gray-100 text-gray-800">
       {/* Header */}
-      <header className="bg-indigo-600 p-5 text-white text-center">
+      <header className="bg-cyan-950 p-5 text-white text-center">
         <h1 className="text-4xl font-bold animate-pulse">Hi, I’m Rajat 👋</h1>
-        <p className="text-xl mt-2">Designer ----> Developer</p>
+        <p className="text-xl mt-2">Designer & Developer</p>
       </header>
 
+      <div className=''>
+        <ul className='flex text-xl flex-row item-center justify-center'>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#Home">Home</a></li>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#About">About</a></li>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#Resume">Resume</a></li>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#Contact">Contact</a></li>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#Project">Project</a></li>
+          <li className='m-5 hover:font-semibold hover:border hover:rounded-md hover:underline'><a href="#MySkills">MySkills</a></li>
+        </ul>
+      </div>
+
       {/* Hero Section with GIF */}
-      <section className="relative w-full h-96 mt-10">
+      <section className="relative w-full h-96 " >
         <img
           src="https://media.giphy.com/media/l1J9qpuvI5L7bYzGQ/giphy.gif"  // Example GIF
           alt="Hero Background"
@@ -24,7 +35,7 @@ function Home() {
       </section>
 
       {/* Home and About Sections */}
-      <div className="max-w-4xl mx-auto p-5 space-y-8">
+      <div className="max-w-4xl mx-auto p-5 space-y-8" id='Home'>
         {/* Home Section */}
         <section id="home" className='h-screen flex-col item-center justify-center flex'>
           <h2 className="text-7xl font-bold text-center mt-12 ">Home</h2>
@@ -33,31 +44,29 @@ function Home() {
           </p>
 
           
-    <div className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: 'url(https://via.placeholder.com/1500x1000)' }}>
+    <div id='About' className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: 'url(https://via.placeholder.com/1500x1000)' }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       
       <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
         <div>
-          <h1 className="text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeIn animate__delay-1s">
+          <h1 className="text-5xl font-extrabold leading-tight mb-6 animate_animated animatefadeIn animate_delay-1s">
             Hello People
           </h1>
-          <p className="text-3xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-2s">
+          <p className="text-3xl font-semibold mb-6 animate_animated animatefadeIn animate_delay-2s">
             I am Rajat Jagtap
           </p>
-          <a href="#about" className="px-6 py-3 bg-indigo-600 text-white font-semibold text-lg rounded-full transition duration-300 hover:bg-indigo-700 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="#about" className="px-6 py-3 bg-indigo-600 text-white font-semibold text-lg rounded-full transition duration-300 hover:bg-indigo-700 animate_animated animatefadeIn animate_delay-3s">
             Learn More
           </a>
         </div>
       </div>
     </div>
-
-
-
-
         </section>
 
+
+
         {/* About Section */}
-        <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex ">
+        <section id="" className="mt-12 h-screen flex-col item-center justify-center flex ">
           <h2 className="text-7xl font-bold text-center">About Me</h2>
        
 
@@ -107,7 +116,7 @@ function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex">
+        <section id="Resume" className="mt-12 h-screen flex-col item-center justify-center flex">
           <h2 className="text-7xl font-bold text-center">Resume</h2>   
           <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg">
             {/* Header */}
@@ -117,7 +126,7 @@ function Home() {
             </div>
 
             {/* Personal Details */}
-            <section className="mb-8">
+            <section id='Contact' className="mb-8">
               <h1 className="text-2xl font-semibold text-gray-800 mb-4">Personal Details</h1>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">RAJAT JAGTAP</h2>
               <div className="grid grid-cols-2 gap-4">
@@ -215,7 +224,7 @@ function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="mt-12 h-screen flex-col item-center justify-center flex">
+        <section id="Project" className="mt-12 h-screen flex-col item-center justify-center flex">
           <h2 className="text-7xl font-bold text-center">Project</h2>
           <p className="mt-4 text-lg text-gray-700">
             
@@ -223,7 +232,7 @@ function Home() {
         </section>
 
         {/* Widgets Section */}
-        <section id="skills" className="mt-12 h-screen flex-col item-center justify-center flex">
+        <section id="MySkills" className="mt-12 h-screen flex-col item-center justify-center flex">
           <h2 className="text-7xl font-bold text-center">My Skills</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
             <div className="widget p-6 bg-orange-500 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 flex items-center ">
